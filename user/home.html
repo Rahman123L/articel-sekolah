@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Start -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            spacing: {
+              13: "3.25rem",
+            },
+            fontFamily: {
+              inter: ["Inter"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Tailwind End -->
+  </head>
+  <body class="bg-[#F2F4F7]">
+    <!-- Header Start -->
+    <div
+      class="container max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full p-4 lg:p-0 lg:px-5"
+    >
+      <!-- Pembungkus Grid Start -->
+      <div class="grid grid-cols-8 gap-3 lg:gap-5 lg:p-8">
+        <!-- Pembungkus Pertama Start -->
+        <div class="col-span-8 lg:h-[5rem] bg-[#FFFFFF] p-4 rounded-lg">
+          <div class="flex items-center gap-3 px-2 md:px-8">
+            <div class="hidden md:block">
+              <h1 class="text-[#000000] text-2xl font-bold uppercase">
+                A News
+              </h1>
+            </div>
+
+            <div class="flex items-center">
+              <!-- Hamburger Mobile -->
+              <button
+                class="block absolute md:hidden w-10 h-10 bg-[#D9D9D9] bg-opacity-50 border border-[#000000] rounded-full"
+                id="hamburger"
+                name="hamburger"
+                type="button"
+                style="animation: fadeIn 0.5s"
+              >
+                <span
+                  class="w-[23px] h-[2px] ml-2 my-1 block bg-[#000000] transition duration-300 ease-in-out origin-top-left"
+                ></span>
+                <span
+                  class="w-[23px] h-[2px] ml-2 my-1 block bg-[#000000] transition duration-300 ease-in-out"
+                ></span>
+                <span
+                  class="w-[23px] h-[2px] ml-2 my-1 block bg-[#000000] transition duration-300 ease-in-out origin-bottom-left"
+                ></span>
+              </button>
+            </div>
+
+            <div class="grow"></div>
+
+            <!-- Search Start -->
+            <div class="hidden md:block">
+              <input
+                class="w-full py-3 mr-[10rem] lg:mr-[45rem] px-[1rem] lg:px-[3rem] border-[1.5px] border-[#98A2B3] focus:border-[#2E90FA] rounded-full focus:outline-none placeholder:font-semibold"
+                placeholder="Cari"
+                type="text"
+              />
+            </div>
+            <!-- Search End -->
+
+            <div class="grow"></div>
+
+            <div class="cursor-pointer" id="dekstop" name="dekstop">
+              <div
+                class="w-10 lg:w-12 h-10 lg:h-12 overflow-hidden border lg:border-2 border-[#000000] rounded-full"
+              >
+                <img
+                  class="object-cover w-full h-full"
+                  src="../images/avatar.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pembungkus Pertama End -->
+
+        <!-- Pembungkus Kedua Start -->
+        <div
+          class="hidden md:block row-span-3 col-span-2 bg-[#2E90FA] p-4 rounded-lg"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolor
+          veritatis iure, culpa totam fuga nesciunt esse aperiam pariatur a!
+        </div>
+        <!-- Pembungkus Kedua End -->
+
+        <!-- Pembungkus Ketiga Start -->
+        <div
+          class="col-start-2 lg:col-start-3 col-span-6 lg:col-span-4 h-[2.5rem] lg:h-[3.5rem] bg-[#2E90FA] p-4 rounded-full"
+        ></div>
+        <!-- Pembungkus Ketiga End -->
+
+        <!-- Pembungkus Keempat Start -->
+        <div
+          class="hidden md:block row-span-4 col-start-7 col-span-2 bg-[#2E90FA] p-4 rounded-lg"
+        >
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+          eligendi atque dolore temporibus ducimus doloribus sit perferendis
+          quia rem error libero dolor enim, quod modi delectus! Dolore velit
+          totam, exercitationem veniam saepe, nesciunt placeat aliquam error
+          voluptates mollitia libero dolores necessitatibus officia ratione
+          voluptate, molestias corrupti atque veritatis asperiores. Natus
+          distinctio similique labore magnam ea ratione quis nostrum aperiam
+          neque quas fugiat dolores, nobis repellendus earum vel facilis totam
+          perspiciatis!
+        </div>
+        <!-- Pembungkus Keempat End -->
+
+        <!-- Pembungkus Lima Start -->
+        <div
+          class="row-span-5 col-start-1 lg:col-start-3 col-span-8 lg:col-span-4 bg-[#2E90FA] p-4 rounded-lg"
+        >
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum labore
+          facere quae vel laudantium unde, velit odio dolore soluta animi ipsam
+          iure fuga corrupti. Quidem nostrum obcaecati voluptatum fugit
+          voluptatem dicta id ab, neque distinctio sint, perferendis nisi
+          possimus dolorem commodi, impedit at nulla beatae sequi quas delectus
+          eius. Error?
+        </div>
+        <!-- Pembungkus Lima End -->
+      </div>
+      <!-- Pembungkus Grid End -->
+    </div>
+    <!-- Header End -->
+
+    <!-- Script Start -->
+    <script src="js/main.js"></script>
+    <!-- Script End -->
+  </body>
+</html>
