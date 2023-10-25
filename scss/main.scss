@@ -1,0 +1,7 @@
+$body-bg-color : #F2F4F7;
+
+@import 'mixin';
+
+.BgBody {
+    @include BgBody();
+}
