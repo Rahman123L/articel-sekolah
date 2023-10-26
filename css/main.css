@@ -1,3 +1,13 @@
 .BgBody {
   background-color: #F2F4F7;
+}
+
+@media (min-width: 768px) {
+  .BgContainer {
+    background-color: #FFFFFF;
+  }
+}
+
+.BdAlert {
+  background-color: #D80032;
 }/*# sourceMappingURL=main.css.map */

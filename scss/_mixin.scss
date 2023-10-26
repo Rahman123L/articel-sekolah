@@ -1,4 +1,27 @@
-// ( Mixin )
-@mixin BgBody {
-    background-color: $body-bg-color;
+@mixin BgBody ($body-bg-color : null) {
+    @if $body-bg-color == null {
+        background-color: #F2F4F7;
+    } @else {
+        background-color: $body-bg-color;
+    }
+}
+
+@mixin BgContainer ($container-bg-color : null) {
+    @if $container-bg-color == null {
+        @media (min-width: 768px) {
+            background-color: #FFFFFF;
+        }
+    } @else {
+        @media (min-width: 768px) {
+            background-color: $container-bg-color;
+        }
+    }
+}
+
+@mixin BdAlert ($alert-bd-color) {
+    @if $alert-bd-color == null {
+        background-color: #D80032;
+    } @else {
+        background-color: $alert-bd-color;
+    }
 }

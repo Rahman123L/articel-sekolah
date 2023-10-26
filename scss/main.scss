@@ -1,7 +1,17 @@
-$body-bg-color : #F2F4F7;
+$body-bg-color: null;
+$container-bg-color: null;
+$alert-bd-color: null;
 
-@import 'mixin';
+@import "mixin";
 
 .BgBody {
-    @include BgBody();
+    @include BgBody ($body-bg-color);
+}
+
+.BgContainer {
+    @include BgContainer ($container-bg-color);    
+}
+
+.BdAlert {
+    @include BdAlert ($alert-bd-color);
 }
