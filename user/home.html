@@ -24,6 +24,17 @@
       };
     </script>
     <!-- Tailwind End -->
+
+    <style type="text/tailwindcss">
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
   </head>
   <body class="bg-[#F2F4F7]">
     <!-- Header Start -->
@@ -183,17 +194,68 @@
 
         <!-- Pembungkus Keempat Start -->
         <div
-          class="hidden md:block row-span-4 col-start-7 col-span-2 bg-[#2E90FA] p-4 rounded-xl"
+          class="hidden md:block row-span-4 col-start-7 col-span-2 bg-transparent rounded-xl"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
-          eligendi atque dolore temporibus ducimus doloribus sit perferendis
-          quia rem error libero dolor enim, quod modi delectus! Dolore velit
-          totam, exercitationem veniam saepe, nesciunt placeat aliquam error
-          voluptates mollitia libero dolores necessitatibus officia ratione
-          voluptate, molestias corrupti atque veritatis asperiores. Natus
-          distinctio similique labore magnam ea ratione quis nostrum aperiam
-          neque quas fugiat dolores, nobis repellendus earum vel facilis totam
-          perspiciatis!
+          <div class="grid gap-5">
+            <div class="container w-full bg-[#FFFFFF] p-5 rounded-lg">
+              <div class="flex items-center">
+                <div class="flex items-center gap-3 overflow-hidden">
+                  <div
+                    class="w-10 lg:w-12 h-10 lg:h-12 overflow-hidden border-2 border-gray-400 rounded-full"
+                  >
+                    <img
+                      class="object-cover w-full h-full"
+                      src="../images/Avatar.jpg"
+                    />
+                  </div>
+                  <div class="">
+                    <!-- Nickname batas 25 karakter -->
+                    <p class="text-[#000000] font-bold">Rizky Rahman Rambe</p>
+                    <p class="text-[#000000] font-normal">2 week ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="py-4">
+                <h1>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quaerat, vero quidem quod, nesciunt quisquam facilis magnam ut
+                  odio eveniet, autem assumenda accusantium quasi quae nihil
+                  neque ex reiciendis dolor explicabo!
+                </h1>
+              </div>
+            </div>
+
+            <div class="container w-full bg-[#FFFFFF] p-5 rounded-lg">
+              <div class="flex items-center">
+                <div class="flex items-center gap-3 overflow-hidden">
+                  <div
+                    class="w-10 lg:w-12 h-10 lg:h-12 overflow-hidden border-2 border-gray-400 rounded-full"
+                  >
+                    <img
+                      class="object-cover w-full h-full"
+                      src="../images/Avatar.jpg"
+                    />
+                  </div>
+                  <div class="">
+                    <!-- Nickname batas 25 karakter -->
+                    <p class="text-[#000000] font-bold">Rizky Rahman Rambe</p>
+                    <p class="text-[#000000] font-normal">2 week ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="py-4">
+                <h1>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quaerat, vero quidem quod, nesciunt quisquam facilis magnam ut
+                  odio eveniet, autem assumenda accusantium quasi quae nihil
+                  neque ex reiciendis dolor explicabo!
+                </h1>
+              </div>
+              <div class="py-2">
+                <img class="w-full md:h-[10rem]" src="../images/Background.png" />
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Pembungkus Keempat End -->
 
@@ -213,22 +275,58 @@
                   />
                 </div>
                 <div class="">
-                  <div class="flex items-center">
+                  <div class="md:flex items-center">
                     <!-- Nickname batas 25 karakter -->
                     <p class="text-[#000000] font-bold">Rizky Rahman Rambe</p>
                     <img
-                      class="w-2 h-2 mx-2"
+                      class="w-2 h-2 mx-2 hidden md:block"
                       src="../images/Point.png"
                     />
+                    <p class="text-[#000000] font-normal">
+                      Senin, 30 Oktober 2023
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="grow"></div>
               <a href="detail.html"
-                ><img
-                  class="w-[6px] cursor-pointer"
-                  src="../images/Point.png"
+                ><img class="w-7 cursor-pointer" src="../images/Ellipsis.svg"
               /></a>
+            </div>
+            <div class="py-4">
+              <div>
+                <span
+                  class="md:hidden"
+                  onclick="allTextChange('short')"
+                  id="desc"
+                >
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolores facilis reiciendis dolor nulla placeat cupiditate
+                  culpa quasi, cum aspernatur exercitationem optio eligendi ad
+                  quo. Corporis voluptas similique inventore quos rerum.
+                </span>
+                <span
+                  onclick="allTextChange('all')"
+                  id="all"
+                  style="color: gray; cursor: pointer"
+                  class="md:hidden"
+                  >lihat selengkapnya....</span
+                >
+              </div>
+              <div>
+                <span class="hidden md:inline">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolores facilis reiciendis dolor nulla placeat cupiditate
+                  culpa quasi, cum aspernatur exercitationem optio eligendi ad
+                  quo. Corporis voluptas similique inventore quos rerum.
+                </span>
+              </div>
+            </div>
+            <div class="py-2">
+              <img class="w-full md:h-[20rem]" src="../images/Background.png" />
+            </div>
+            <div class="mx-5">
+              <h1 class="text-[#000000] font-medium">Dilihat 200k</h1>
             </div>
           </div>
         </div>
@@ -239,7 +337,8 @@
     <!-- Header End -->
 
     <!-- Script Start -->
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/desc.js"></script>
     <!-- Script End -->
   </body>
 </html>
