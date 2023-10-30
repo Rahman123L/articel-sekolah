@@ -26,6 +26,22 @@
     <!-- Tailwind End -->
 
     <style type="text/tailwindcss">
+      .hamburger-active > span:nth-child(1) {
+        @apply rotate-45;
+      }
+      .hamburger-active > span:nth-child(2) {
+        @apply scale-0;
+      }
+      .hamburger-active > span:nth-child(3) {
+        @apply -rotate-45;
+      }
+
+      @media (max-width: 767px) {
+        .fixeed {
+          position: fixed;
+        }
+      }
+
       @keyframes fadeIn {
         from {
           opacity: 0;
@@ -103,7 +119,8 @@
 
         <!-- Pembungkus Kedua Start -->
         <div
-          class="hidden md:block row-span-3 col-span-2 bg-[#FFFFFF] p-4 rounded-xl"
+          class="hidden md:block fixeed row-span-3 col-span-2 bg-[#FFFFFF] p-4 rounded-xl z-10"
+          id="nav-menu"
         >
           <div class="">
             <h1 class="font-bold text-[#000000] ml-5">Kategori</h1>
@@ -252,7 +269,10 @@
                 </h1>
               </div>
               <div class="py-2">
-                <img class="w-full md:h-[10rem]" src="../images/Background.png" />
+                <img
+                  class="w-full md:h-[10rem]"
+                  src="../images/Background.png"
+                />
               </div>
             </div>
           </div>
@@ -337,8 +357,8 @@
     <!-- Header End -->
 
     <!-- Script Start -->
-    <script src="../js/main.js"></script>
     <script src="../js/desc.js"></script>
+    <script src="../js/hamburger.js"></script>
     <!-- Script End -->
   </body>
 </html>
