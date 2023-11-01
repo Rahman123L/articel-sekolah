@@ -71,20 +71,20 @@
             <div class="flex items-center">
               <!-- Hamburger Mobile -->
               <button
-                class="block absolute md:hidden w-10 h-10 bg-[#D9D9D9] bg-opacity-50 border border-[#000000] rounded-full"
+                class="block absolute md:hidden"
                 id="hamburger"
                 name="hamburger"
                 type="button"
                 style="animation: fadeIn 0.5s"
               >
                 <span
-                  class="w-[23px] h-[2px] ml-2 my-1 block bg-[#000000] transition duration-300 ease-in-out origin-top-left"
+                  class="w-[30px] h-[2px] ml-1 my-2 block bg-[#000000] transition duration-300 ease-in-out origin-top-left"
                 ></span>
                 <span
-                  class="w-[23px] h-[2px] ml-2 my-1 block bg-[#000000] transition duration-300 ease-in-out"
+                  class="w-[30px] h-[2px] ml-1 my-2 block bg-[#000000] transition duration-300 ease-in-out"
                 ></span>
                 <span
-                  class="w-[23px] h-[2px] ml-2 my-1 block bg-[#000000] transition duration-300 ease-in-out origin-bottom-left"
+                  class="w-[30px] h-[2px] ml-1 my-2 block bg-[#000000] transition duration-300 ease-in-out origin-bottom-left"
                 ></span>
               </button>
             </div>
@@ -119,76 +119,105 @@
 
         <!-- Pembungkus Kedua Start -->
         <div
-          class="hidden md:block fixeed row-span-3 col-span-2 bg-[#FFFFFF] p-4 rounded-xl z-10"
+          class="hidden md:block top-0 bottom-0 inset-x-0 w-[17rem] md:w-full fixeed row-span-3 col-span-2 bg-[#FFFFFF] p-4 md:rounded-xl z-10"
           id="nav-menu"
         >
-          <div class="">
-            <h1 class="font-bold text-[#000000] ml-5">Kategori</h1>
+          <div class="md:hidden flex justify-center relative z-10">
+            <!-- Pembungkus -->
+            <div
+              class="fixed bg-[#FFFFFF] top-0 pt-4 px-11 w-auto border-b-[0.1px] border-gray-500"
+            >
+              <div class="pb-2">
+                <!-- Logo & Text -->
+                <div class="flex items-center gap-3">
+                  <!-- Logo -->
+                  <div
+                    class="w-14 h-14 overflow-hidden border border-[#ffffff90] rounded-full"
+                  >
+                    <img
+                      class="object-cover w-full h-full"
+                      src="../images/logo.png"
+                    />
+                  </div>
+
+                  <!-- Text -->
+                  <div class="">
+                    <h1 class="font-bold text-[#000000] uppercase">Smk 2 Ratu</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- Pembungkus Border Start -->
-          <div class="">
-            <div class="py-4 border-[#2E90FA] b-[0.1px] border-[#C4DFDF]">
-              <div class="px-5 grid gap-3">
-                <!-- Border Start -->
-                <a href="#">
-                  <div
-                    class="py-2 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer"
-                  >
-                    <div class="flex mx-5 items-center gap-3">
-                      <img class="w-5" src="../images/avatar.jpg" />
-                      <h1 class="font-semibold text-[#000000]">
-                        Penerimaan Siswa Baru
-                      </h1>
-                    </div>
-                  </div>
-                </a>
-                <!-- Border End -->
+          <div class="mt-20 md:mt-0">
+            <div class="">
+              <h1 class="font-bold text-sm md:text-base text-[#000000] ml-5 uppercase">Kategori</h1>
+            </div>
 
-                <!-- Border Start -->
-                <a href="#">
-                  <div
-                    class="py-2 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer"
-                  >
-                    <div class="flex mx-5 items-center gap-3">
-                      <img class="w-5" src="../images/avatar.jpg" />
-                      <h1 class="font-semibold text-[#000000]">
-                        Prestasi Siswa
-                      </h1>
+            <!-- Pembungkus Border Start -->
+            <div class="overflow-hidden overflow-y-scroll w-full h-full">
+              <div class="py-4 border-[#2E90FA] b-[0.1px] border-[#C4DFDF]">
+                <div class="px-5 grid gap-3">
+                  <!-- Border Start -->
+                  <a href="#">
+                    <div
+                      class="py-2 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer"
+                    >
+                      <div class="flex mx-5 items-center gap-3">
+                        <img class="w-4 md:w-5" src="../images/avatar.jpg" />
+                        <h1 class="font-semibold text-xs md:text-base text-[#000000]">
+                          Siswa Baru
+                        </h1>
+                      </div>
                     </div>
-                  </div>
-                </a>
-                <!-- Border End -->
+                  </a>
+                  <!-- Border End -->
 
-                <!-- Border Start -->
-                <a href="#">
-                  <div
-                    class="py-2 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer"
-                  >
-                    <div class="flex mx-5 items-center gap-3">
-                      <img class="w-5" src="../images/avatar.jpg" />
-                      <h1 class="font-semibold text-[#000000]">
-                        Lomba Matematika
-                      </h1>
+                  <!-- Border Start -->
+                  <a href="#">
+                    <div
+                      class="py-2 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer"
+                    >
+                      <div class="flex mx-5 items-center gap-3">
+                        <img class="w-4 md:w-5" src="../images/avatar.jpg" />
+                        <h1 class="font-semibold text-xs md:text-base text-[#000000]">
+                          Prestasi Siswa
+                        </h1>
+                      </div>
                     </div>
-                  </div>
-                </a>
-                <!-- Border End -->
+                  </a>
+                  <!-- Border End -->
 
-                <!-- Border Start -->
-                <a href="#">
-                  <div
-                    class="py-2 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer"
-                  >
-                    <div class="flex mx-5 items-center gap-3">
-                      <img class="w-5" src="../images/avatar.jpg" />
-                      <h1 class="font-semibold text-[#000000]">
-                        Kegiatan Kesenian
-                      </h1>
+                  <!-- Border Start -->
+                  <a href="#">
+                    <div
+                      class="py-2 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer"
+                    >
+                      <div class="flex mx-5 items-center gap-3">
+                        <img class="w-4 md:w-5" src="../images/avatar.jpg" />
+                        <h1 class="font-semibold text-xs md:text-base text-[#000000]">
+                          Lomba Matematika
+                        </h1>
+                      </div>
                     </div>
-                  </div>
-                </a>
-                <!-- Border End -->
+                  </a>
+                  <!-- Border End -->
+
+                  <!-- Border Start -->
+                  <a href="#">
+                    <div
+                      class="py-2 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer"
+                    >
+                      <div class="flex mx-5 items-center gap-3">
+                        <img class="w-4 md:w-5" src="../images/avatar.jpg" />
+                        <h1 class="font-semibold text-xs md:text-base text-[#000000]">
+                          Kegiatan Kesenian
+                        </h1>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- Border End -->
+                </div>
               </div>
             </div>
           </div>
