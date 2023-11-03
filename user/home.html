@@ -57,6 +57,10 @@
             transform: translateX(0);
           }
         }
+
+        .overflow-y-scrol {
+          overflow-y: scroll;
+        }
       }
 
       @keyframes slideInRight {
@@ -145,7 +149,7 @@
 
         <!-- Pembungkus Kedua Start -->
         <div
-          class="hidden overflow-hidden overflow-y-scroll md:overscroll-none md:block top-0 bottom-0 inset-x-0 w-[17rem] md:w-full fixeed row-span-3 col-span-2 bg-[#FFFFFF] p-4 md:rounded-xl z-10"
+          class="hidden overflow-y-scroll md:block top-0 bottom-0 inset-x-0 w-[17rem] md:w-full fixeed row-span-3 col-span-2 bg-[#FFFFFF] p-4 md:rounded-xl z-10"
           id="nav-menu"
           style="animation: slideInLeft 1s"
         >
@@ -189,7 +193,7 @@
 
             <!-- Pembungkus Border Start -->
             <div class="">
-              <div class="py-4 border-[#2E90FA] b-[0.1px] border-[#C4DFDF]">
+              <div class="py-4 border-b-[0.1px] border-[#000000]">
                 <div class="px-5 grid gap-3">
                   <!-- Border Start -->
                   <a href="#">
@@ -258,6 +262,22 @@
                     </div>
                   </a>
                   <!-- Border End -->
+
+                  <!-- Border Start -->
+                  <div class="my-2">
+                    <a href="#">
+                      <div
+                        class="py-2 bg-orange-400 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer"
+                      >
+                        <h1
+                          class="font-semibold text-xs md:text-base text-[#FFFFFF] text-center"
+                        >
+                          Login
+                        </h1>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- Border End -->
                 </div>
               </div>
             </div>
@@ -268,7 +288,7 @@
 
         <!-- Pembungkus Ketiga Start -->
         <div
-          class="col-start-2 lg:col-start-3 col-span-6 lg:col-span-4 bg-none"
+          class="hidden md:block col-start-2 lg:col-start-3 col-span-6 lg:col-span-4 bg-none"
         >
           <!-- Pembungkus -->
           <div
@@ -310,14 +330,13 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
         <!-- Pembungkus Ketiga End -->
 
         <!-- Pembungkus Keempat Start -->
         <div
-          class="hidden md:block row-span-4 col-start-7 col-span-2 bg-transparent rounded-xl"
+          class="h-[100vh] overflow-y-scroll hidden md:block row-span-4 col-start-7 col-span-2 bg-transparent rounded-xl"
         >
           <div class="grid gap-5">
             <div class="container w-full bg-[#FFFFFF] p-5 rounded-lg">
@@ -381,78 +400,195 @@
                 />
               </div>
             </div>
+
+            <div class="container w-full bg-[#FFFFFF] p-5 rounded-lg">
+              <div class="flex items-center">
+                <div class="flex items-center gap-3 overflow-hidden">
+                  <div
+                    class="w-10 lg:w-12 h-10 lg:h-12 overflow-hidden border-2 border-gray-400 rounded-full"
+                  >
+                    <img
+                      class="object-cover w-full h-full"
+                      src="../images/Avatar.jpg"
+                    />
+                  </div>
+                  <div class="">
+                    <!-- Nickname batas 25 karakter -->
+                    <p class="text-[#000000] font-bold">Rizky Rahman Rambe</p>
+                    <p class="text-[#000000] font-normal">2 week ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="py-4">
+                <h1>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quaerat, vero quidem quod, nesciunt quisquam facilis magnam ut
+                  odio eveniet, autem assumenda accusantium quasi quae nihil
+                  neque ex reiciendis dolor explicabo!
+                </h1>
+              </div>
+              <div class="py-2">
+                <img
+                  class="w-full md:h-[10rem]"
+                  src="../images/Background.png"
+                />
+              </div>
+            </div>
           </div>
         </div>
         <!-- Pembungkus Keempat End -->
 
         <!-- Pembungkus Lima Start -->
         <div
-          class="row-span-5 col-start-1 lg:col-start-3 col-span-8 lg:col-span-4 bg-transparent rounded-xl"
+          class="h-[100vh] md:overflow-y-scroll row-span-5 col-start-1 lg:col-start-3 col-span-8 lg:col-span-4 bg-transparent rounded-xl"
         >
-          <div class="container w-full bg-[#FFFFFF] p-5 rounded-lg">
-            <div class="flex items-center">
-              <div class="flex items-center gap-3 overflow-hidden">
-                <div
-                  class="w-10 lg:w-12 h-10 lg:h-12 overflow-hidden border-2 border-gray-400 rounded-full"
-                >
-                  <img
-                    class="object-cover w-full h-full"
-                    src="../images/Avatar.jpg"
-                  />
-                </div>
-                <div class="">
-                  <div class="md:flex items-center">
-                    <!-- Nickname batas 25 karakter -->
-                    <p class="text-[#000000] font-bold">Rizky Rahman Rambe</p>
+          <div class="grid gap-5">
+            <div class="container w-full bg-[#FFFFFF] p-5 rounded-lg">
+              <div class="flex items-center">
+                <div class="flex items-center gap-3 overflow-hidden">
+                  <div
+                    class="w-10 lg:w-12 h-10 lg:h-12 overflow-hidden border-2 border-gray-400 rounded-full"
+                  >
                     <img
-                      class="w-2 h-2 mx-2 hidden md:block"
-                      src="../images/Point.png"
+                      class="object-cover w-full h-full"
+                      src="../images/Avatar.jpg"
                     />
-                    <p class="text-[#000000] font-normal">
-                      Senin, 30 Oktober 2023
-                    </p>
+                  </div>
+                  <div class="">
+                    <div class="md:flex items-center">
+                      <!-- Nickname batas 25 karakter -->
+                      <p class="text-[#000000] font-bold">Rizky Rahman Rambe</p>
+                      <img
+                        class="w-2 h-2 mx-2 hidden md:block"
+                        src="../images/Point.png"
+                      />
+                      <p class="text-[#000000] font-normal">
+                        Senin, 30 Oktober 2023
+                      </p>
+                    </div>
                   </div>
                 </div>
+                <div class="grow"></div>
+                <a href="detail.html"
+                  ><img class="w-7 cursor-pointer" src="../images/Share.svg"
+                /></a>
               </div>
-              <div class="grow"></div>
-              <a href="detail.html"
-                ><img class="w-7 cursor-pointer" src="../images/Ellipsis.svg"
-              /></a>
-            </div>
-            <div class="py-4">
-              <div>
-                <span
-                  class="md:hidden"
-                  onclick="allTextChange('short')"
-                  id="desc"
+              <div class="py-4">
+                <div>
+                  <span
+                    class="md:hidden"
+                    onclick="allTextChange('short')"
+                    id="desc"
+                  >
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolores facilis reiciendis dolor nulla placeat cupiditate
+                    culpa quasi, cum aspernatur exercitationem optio eligendi ad
+                    quo. Corporis voluptas similique inventore quos rerum.
+                  </span>
+                  <span
+                    onclick="allTextChange('all')"
+                    id="all"
+                    style="color: gray; cursor: pointer"
+                    class="md:hidden"
+                    >lihat selengkapnya....</span
+                  >
+                </div>
+                <div>
+                  <span class="hidden md:inline">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolores facilis reiciendis dolor nulla placeat cupiditate
+                    culpa quasi, cum aspernatur exercitationem optio eligendi ad
+                    quo. Corporis voluptas similique inventore quos rerum.
+                  </span>
+                </div>
+              </div>
+              <div class="py-2">
+                <img
+                  class="w-full md:h-[20rem]"
+                  src="../images/Background.png"
+                />
+              </div>
+              <div class="mx-5">
+                <h1
+                  class="text-gray-400 text-[10px] md:text-[14px] font-semibold uppercase"
                 >
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Dolores facilis reiciendis dolor nulla placeat cupiditate
-                  culpa quasi, cum aspernatur exercitationem optio eligendi ad
-                  quo. Corporis voluptas similique inventore quos rerum.
-                </span>
-                <span
-                  onclick="allTextChange('all')"
-                  id="all"
-                  style="color: gray; cursor: pointer"
-                  class="md:hidden"
-                  >lihat selengkapnya....</span
+                  Dilihat 200k
+                </h1>
+              </div>
+            </div>
+
+            <div class="container w-full bg-[#FFFFFF] p-5 rounded-lg">
+              <div class="flex items-center">
+                <div class="flex items-center gap-3 overflow-hidden">
+                  <div
+                    class="w-10 lg:w-12 h-10 lg:h-12 overflow-hidden border-2 border-gray-400 rounded-full"
+                  >
+                    <img
+                      class="object-cover w-full h-full"
+                      src="../images/Avatar.jpg"
+                    />
+                  </div>
+                  <div class="">
+                    <div class="md:flex items-center">
+                      <!-- Nickname batas 25 karakter -->
+                      <p class="text-[#000000] font-bold">Rizky Rahman Rambe</p>
+                      <img
+                        class="w-2 h-2 mx-2 hidden md:block"
+                        src="../images/Point.png"
+                      />
+                      <p class="text-[#000000] font-normal">
+                        Senin, 30 Oktober 2023
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="grow"></div>
+                <a href="detail.html"
+                  ><img class="w-7 cursor-pointer" src="../images/Share.svg"
+                /></a>
+              </div>
+              <div class="py-4">
+                <div>
+                  <span
+                    class="md:hidden"
+                    onclick="allTextChange('short')"
+                    id="desc"
+                  >
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolores facilis reiciendis dolor nulla placeat cupiditate
+                    culpa quasi, cum aspernatur exercitationem optio eligendi ad
+                    quo. Corporis voluptas similique inventore quos rerum.
+                  </span>
+                  <span
+                    onclick="allTextChange('all')"
+                    id="all"
+                    style="color: gray; cursor: pointer"
+                    class="md:hidden"
+                    >lihat selengkapnya....</span
+                  >
+                </div>
+                <div>
+                  <span class="hidden md:inline">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolores facilis reiciendis dolor nulla placeat cupiditate
+                    culpa quasi, cum aspernatur exercitationem optio eligendi ad
+                    quo. Corporis voluptas similique inventore quos rerum.
+                  </span>
+                </div>
+              </div>
+              <div class="py-2">
+                <img
+                  class="w-full md:h-[20rem]"
+                  src="../images/Background.png"
+                />
+              </div>
+              <div class="mx-5">
+                <h1
+                  class="text-gray-400 text-[10px] md:text-[14px] font-semibold uppercase"
                 >
+                  Dilihat 200k
+                </h1>
               </div>
-              <div>
-                <span class="hidden md:inline">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Dolores facilis reiciendis dolor nulla placeat cupiditate
-                  culpa quasi, cum aspernatur exercitationem optio eligendi ad
-                  quo. Corporis voluptas similique inventore quos rerum.
-                </span>
-              </div>
-            </div>
-            <div class="py-2">
-              <img class="w-full md:h-[20rem]" src="../images/Background.png" />
-            </div>
-            <div class="mx-5">
-              <h1 class="text-gray-400 text-[10px] md:text-[14px] font-semibold uppercase">Dilihat 200k</h1>
             </div>
           </div>
         </div>
