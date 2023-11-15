@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+
+    <!-- Tailwind Start -->
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    spacing: {
+                        13: "3.25rem",
+                    },
+                    fontFamily: {
+                        inter: ["Inter"],
+                    },
+                },
+            },
+        };
+    </script>
+    <!-- Tailwind End -->
+
+    <style type="text/tailwindcss">
+        @media (max-width: 767px) {
+        .fixeed {
+          position: fixed;
+        }
+
+        @keyframes slideInLeft {
+          from {
+            transform: translateX(-100%);
+          }
+          to {
+            transform: translateX(0);
+          }
+        }
+
+        .overflow-y-scrol {
+          overflow-y: scroll;
+        }
+      }
+
+      @keyframes slideInRight {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+</head>
+
+<body class="bg-[#F2F4F7]">
+    <!-- Header Start -->
+    <div class="container max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full p-4 lg:p-0 lg:px-5">
+        <!-- Pembungkus Grid Start -->
+        <div class="grid grid-cols-8 gap-3 lg:gap-5 lg:p-8">
+            <!-- Pembungkus Pertama Start -->
+            <div class="col-span-8 bg-[#FFFFFF] p-4 rounded-xl">
+                <div class="flex items-center gap-3 px-2 md:px-8">
+                    <div class="hidden md:block">
+                        <!-- Logo & Text -->
+                        <div class="flex items-center gap-3">
+                            <!-- Logo -->
+                            <div
+                                class="w-10 lg:w-14 h-10 lg:h-14 overflow-hidden border border-[#ffffff90] rounded-full">
+                                <img class="object-cover w-full h-full" src="../images/logo.png" />
+                            </div>
+
+                            <!-- Text -->
+                            <div class="">
+                                <h1 class="font-bold text-base lg:text-xl text-[#000000] uppercase">
+                                    Smk 2 Ratu
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center">
+                        <!-- Hamburger Mobile -->
+                        <button class="block absolute md:hidden" id="hamburger" name="hamburger" type="button">
+                            <div class="border border-[#D9D9D9] rounded-full">
+                                <img class="w-9" src="../images/Hamburger.svg" />
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="grow"></div>
+
+                    <div class="cursor-pointer" id="dekstop" name="dekstop">
+                        <div
+                            class="w-9 lg:w-12 h-9 lg:h-12 overflow-hidden border lg:border-2 border-gray-400 rounded-full">
+                            <img class="object-cover w-full h-full" src="../images/Avatar.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pembungkus Pertama End -->
+
+            <!-- Pembungkus Kedua Start -->
+            <div class="hidden overflow-y-scroll md:block top-0 bottom-0 inset-x-0 w-[17rem] md:w-full fixeed row-span-3 md:col-span-3 lg:col-span-2 bg-[#FFFFFF] p-4 md:rounded-xl z-10"
+                id="nav-menu" style="animation: slideInLeft 1s">
+                <div class="md:hidden flex justify-center relative z-10">
+                    <!-- Pembungkus -->
+                    <div class="fixed bg-[#FFFFFF] top-0 pt-4 px-11 w-auto border-b-[0.1px] border-gray-500">
+                        <div class="pb-2">
+                            <!-- Logo & Text -->
+                            <div class="flex items-center gap-3">
+                                <!-- Logo -->
+                                <div class="w-12 h-12 overflow-hidden border border-[#ffffff90] rounded-full">
+                                    <img class="object-cover w-full h-full" src="../images/logo.png" />
+                                </div>
+
+                                <!-- Text -->
+                                <div class="">
+                                    <h1 class="text-[#000000] text-base font-bold uppercase">
+                                        Smk 2 Ratu
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-[4.5rem] md:mt-0">
+
+                    <!-- Pembungkus Border Start -->
+                    <div class="">
+                        <div class="pt-4 pb-5 border-b-[0.1px] border-[#000000]">
+                            <div class="px-5 grid gap-3">
+                                <!-- Border Start -->
+                                <a href="home.html">
+                                <div class="py-2 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer">
+                                    <div class="flex mx-5 items-center gap-3">
+                                        <img class="w-4 lg:w-5" src="../images/Dashboard.svg" />
+                                        <h1 class="font-semibold text-xs md:text-sm lg:text-base text-[#000000]">
+                                            Dashboard
+                                        </h1>
+                                    </div>
+                                </div>
+                                </a>
+                                <!-- Border End -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-3 pb-2">
+                        <h1 class="font-bold text-sm lg:text-base text-[#000000] ml-5 uppercase">
+                            Articles
+                        </h1>
+                    </div>
+
+                    <!-- Pembungkus -->
+                    <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                        <!-- Icon & Text ( Peserta ) -->
+                        <div class="flex py-2 mx-5 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer" x-model="selectedOption" @click="isOpen = !isOpen">
+                            <div class="flex mx-5 items-center gap-3">
+                                <img class="w-4 lg:w-5" src="../images/Postingan.svg" />
+                                <h1 class="font-semibold text-xs md:text-sm lg:text-base text-[#000000]">
+                                    Postingan
+                                </h1>
+                            </div>    
+                            <div class="grow"></div>
+                            <div class="mr-1">
+                                <img class="w-5" src="../images/Dropdown.svg">
+                            </div>
+                        </div>
+                        
+                        <!-- Pembungkus Sub Menu -->
+                        <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                            <!-- Icon & Text ( Tambah ) -->
+                            <a href="tambah.html">
+                            <div class="flex py-2 mx-5 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer" x-model="selectedOption" @click="isOpen = !isOpen">
+                                <div class="flex mx-5 items-center gap-3">
+                                    <img class="w-4 lg:w-5" src="../images/Tambah.svg" />
+                                    <h1 class="font-semibold text-xs md:text-sm lg:text-base text-[#000000]">
+                                        Tambah
+                                    </h1>
+                                </div>
+                            </div>
+                            </a>
+
+                            <!-- Icon & Text ( Aktif ) -->
+                            <a href="aktif.html">
+                            <div class="flex py-2 mx-5 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer" x-model="selectedOption" @click="isOpen = !isOpen">
+                                <div class="flex mx-5 items-center gap-3">
+                                    <img class="w-4 lg:w-5" src="../images/Aktif.svg" />
+                                    <h1 class="font-semibold text-xs md:text-sm lg:text-base text-[#000000]">
+                                        Aktif
+                                    </h1>
+                                </div>
+                            </div>
+                            </a>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Pembungkus Border Start -->
+                    <div class="">
+                        <div class="pt-4 pb-5 border-b-[0.1px] border-[#000000]">
+                            <div class="px-5 grid gap-3">
+                                <!-- Border Start -->
+                                <a href="kategori.html">
+                                <div class="py-2 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer">
+                                    <div class="flex mx-5 items-center gap-3">
+                                        <img class="w-4 lg:w-5" src="../images/Kategori.svg" />
+                                        <h1 class="font-semibold text-xs md:text-sm lg:text-base text-[#000000]">
+                                            Kategori
+                                        </h1>
+                                    </div>
+                                </div>
+                                </a>
+                                <!-- Border End -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-3 pb-2">
+                        <h1 class="font-bold text-sm lg:text-base text-[#000000] ml-5 uppercase">
+                            Fitur
+                        </h1>
+                    </div>
+
+                    <!-- Pembungkus Border Start -->
+                    <div class="">
+                        <div class="py-4 border-b-[0.1px] border-[#000000]">
+                            <div class="px-5 grid gap-3">
+
+                                <!-- Border Start -->
+                                <div class="mb-1">
+                                    <a href="../index.html">
+                                        <div
+                                            class="py-2 bg-red-400 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer">
+                                            <h1
+                                                class="font-semibold text-xs md:text-sm lg:text-base text-[#FFFFFF] text-center">
+                                                Logout
+                                            </h1>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Border End -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pembungkus Border End -->
+            </div>
+            <!-- Pembungkus Kedua End -->
+
+            <!-- Pembungkus Ketiga Start -->
+            <div class="h-[100vh] row-span-5 col-start-1 md:col-span-5 lg:col-start-3 col-span-8 lg:col-span-6 bg-transparent rounded-xl">
+                <div class="grid gap-5">
+                    <div class="container overflow-hidden w-full bg-[#FFFFFF] p-5 rounded-lg">
+
+                        <!-- Text -->
+                        <h1 class="text-base mb-5 lg:text-xl font-bold text-[#A9A9A9] uppercase">Tambah Postingan</h1>
+
+                        <div class="md:flex gap-3 mb-1">
+
+                            <!-- Button -->
+                            <a href="tambah(postingan).html">
+                            <button class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-2 px-14 mb-3 text-center rounded-xl border-2 border-[#A9A9A9] shadow-md hover:border-[#000000] hover:shadow focus:bg-[#A9A9A9] focus:opacity-50">
+                                <img class="w-6" src="../images/Tambah.svg">
+                                <h1 class="font-bold text-base text-[#000000]">Tambah Data</h1>
+                            </button>
+                            </a>
+
+                            <div class="grow"></div>
+
+                            <div class="mb-3">
+                                <!-- Pembungkus Cari -->
+                                <div class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-2 pr-3 border-2 border-[#A9A9A9] rounded-xl shadow-md hover:border-[#000000] hover:shadow focus:bg-[#A9A9A9] focus:opacity-50">
+
+                                    <!-- Icon -->
+                                    <label class="flex items-center ml-5 cursor-pointer">
+                                        <img class="w-6" src="../images/Search.svg">
+                                    </label>
+
+                                    <!-- Input -->
+                                    <input class="w-full lg:w-[20rem] text-[#000000] text-base font-bold placeholder:text-base placeholder:text-[#000000] focus:outline-none placeholder:font-bold" placeholder="Searching" type="text" id="Cari">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pembungkus -->
+                        <div class="hidden lg:block w-full p-5 border-2 border-[#A9A9A9] rounded-xl shadow-lg" style="animation: fadeIn 1.0s;">
+
+                            <!-- Pembungkus -->
+                            <div class="overflow-x-scroll overflow-hidden">
+
+                                <!-- Table -->
+                                <table class="w-full border-collapse border-[0.5px] border-[#000000] text-center">
+
+                                    <!-- Baris Ke 1 -->
+                                    <tr>
+                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">No.</th>
+                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Nama</th>
+                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Judul</th>
+                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Deskripsi Singkat</th>
+                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Deskripsi Panjang</th>
+                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">View</th>
+                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Date</th>
+                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Aksi</th>
+                                    </tr>
+
+                                    <!-- Baris Ke 2 -->
+                                    <tr>
+                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">1.</td>
+                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">Rizky Rahman Rambe</td>
+                                        <th class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">AkuInginPahala</th>
+                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">Keindahan Alam</td>
+                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">Ada Pohon, Daun, Dan Ikan Terbang</td>
+                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">10</td>
+                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">30/10/2003</td>
+                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold">
+                                            <div class="flex justify-center gap-2">
+                                                <a href="edit(postingan).html">
+                                                <button class="py-1 px-3 bg-green-400 rounded-lg focus:bg-[#A9A9A9]">
+                                                    <h1 class="text-sm text-[#FFFFFF]">Edit</h1>
+                                                </button>
+                                                </a>
+
+                                                <a href="#">
+                                                <button class="py-1 px-3 bg-red-400 rounded-lg focus:bg-[#A9A9A9]">
+                                                    <h1 class="text-sm text-[#FFFFFF]">Delete</h1>
+                                                </button>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Pembungkus -->
+                        <div class="lg:hidden w-full p-5 border-2 border-[#A9A9A9] rounded-xl shadow-lg" style="animation: fadeIn 1.0s;">
+
+                            <!-- Pembungkus -->
+                            <div class="overflow-x-scroll overflow-hidden">
+
+                                <!-- Table -->
+                                <table class="w-full border-collapse border-[0.5px] border-[#000000] text-center">
+
+                                    <!-- Baris Ke 1 -->
+                                    <tr>
+                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">No.</th>
+                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Nama</th>
+                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Judul</th>
+                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Deskripsi Singkat</th>
+                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Deskripsi Panjang</th>
+                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">View</th>
+                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Date</th>
+                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Aksi</th>
+                                    </tr>
+
+                                    <!-- Baris Ke 2 -->
+                                    <tr>
+                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">1.</td>
+                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">Rizky Rahman Rambe</td>
+                                        <th class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">AkuInginPahala</th>
+                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">Keindahan Alam</td>
+                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">Ada Pohon, Daun, Dan Ikan Terbang</td>
+                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">10</td>
+                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">30/10/2003</td>
+                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold">
+                                            <div class="flex justify-center gap-2">
+                                                <a href="edit(postingan).html">
+                                                <button class="py-1 px-3 bg-green-400 rounded-lg focus:bg-[#A9A9A9]">
+                                                    <h1 class="text-sm text-[#FFFFFF]">Edit</h1>
+                                                </button>
+                                                </a>
+
+                                                <a href="#">
+                                                <button class="py-1 px-3 bg-red-400 rounded-lg focus:bg-[#A9A9A9]">
+                                                    <h1 class="text-sm text-[#FFFFFF]">Delete</h1>
+                                                </button>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Pembungkus Ketiga End -->
+        </div>
+        <!-- Pembungkus Grid End -->
+    </div>
+    <!-- Header End -->
+
+    <!-- Script Start -->
+    <script src="../js/desc.js"></script>
+    <script src="../js/hamburger.js"></script>
+    <!-- Script End -->
+</body>
+
+</html>
