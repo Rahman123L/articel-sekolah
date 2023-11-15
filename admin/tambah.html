@@ -287,7 +287,7 @@
 
                             <div class="grow"></div>
 
-                            <div class="mb-3">
+                            <div class="flex justify-center items-center gap-3 mb-3">
                                 <!-- Pembungkus Cari -->
                                 <div class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-2 pr-3 border-2 border-[#A9A9A9] rounded-xl shadow-md hover:border-[#000000] hover:shadow focus:bg-[#A9A9A9] focus:opacity-50">
 
@@ -299,91 +299,44 @@
                                     <!-- Input -->
                                     <input class="w-full lg:w-[20rem] text-[#000000] text-base font-bold placeholder:text-base placeholder:text-[#000000] focus:outline-none placeholder:font-bold" placeholder="Searching" type="text" id="Cari">
                                 </div>
+
+                                <div class="md:hidden border-2 p-1 border-[#A9A9A9] hover:border-[#000000] shadow-md hover:shadow rounded-xl cursor-pointer">
+                                    <img class="w-10" src="../images/Setting.svg">
+                                </div>
                             </div>
                         </div>
 
                         <!-- Pembungkus -->
-                        <div class="hidden lg:block w-full p-5 border-2 border-[#A9A9A9] rounded-xl shadow-lg" style="animation: fadeIn 1.0s;">
+                        <div class="w-full p-5 mb-3 border-2 border-[#A9A9A9] rounded-xl shadow-lg">
 
                             <!-- Pembungkus -->
-                            <div class="overflow-x-scroll overflow-hidden">
+                            <div class="sm:overflow-x-scroll  overflow-hidden">
 
                                 <!-- Table -->
-                                <table class="w-full border-collapse border-[0.5px] border-[#000000] text-center">
+                                <table class="w-full border-collapse md:border-[0.5px] border-[#000000] text-center">
 
                                     <!-- Baris Ke 1 -->
                                     <tr>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">No.</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Nama</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Judul</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Deskripsi Singkat</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Deskripsi Panjang</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">View</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Date</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Aksi</th>
+                                        <th class="hidden md:block border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">No.</th>
+                                        <th class="hidden md:block border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Nama</th>
+                                        <th class="hidden md:block border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Judul</th>
+                                        <th class="hidden md:block border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Deskripsi Singkat</th>
+                                        <th class="hidden md:block border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Deskripsi Panjang</th>
+                                        <th class="hidden md:block border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">View</th>
+                                        <th class="hidden md:block border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Date</th>
+                                        <th class="hidden md:block border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Aksi</th>
                                     </tr>
 
                                     <!-- Baris Ke 2 -->
-                                    <tr>
-                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">1.</td>
-                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">Rizky Rahman Rambe</td>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">AkuInginPahala</th>
-                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">Keindahan Alam</td>
-                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">Ada Pohon, Daun, Dan Ikan Terbang</td>
-                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">10</td>
-                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">30/10/2003</td>
-                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold">
-                                            <div class="flex justify-center gap-2">
-                                                <a href="edit(postingan).html">
-                                                <button class="py-1 px-3 bg-green-400 rounded-lg focus:bg-[#A9A9A9]">
-                                                    <h1 class="text-sm text-[#FFFFFF]">Edit</h1>
-                                                </button>
-                                                </a>
-
-                                                <a href="#">
-                                                <button class="py-1 px-3 bg-red-400 rounded-lg focus:bg-[#A9A9A9]">
-                                                    <h1 class="text-sm text-[#FFFFFF]">Delete</h1>
-                                                </button>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                </table>
-                            </div>
-                        </div>
-
-                        <!-- Pembungkus -->
-                        <div class="lg:hidden w-full p-5 border-2 border-[#A9A9A9] rounded-xl shadow-lg" style="animation: fadeIn 1.0s;">
-
-                            <!-- Pembungkus -->
-                            <div class="overflow-x-scroll overflow-hidden">
-
-                                <!-- Table -->
-                                <table class="w-full border-collapse border-[0.5px] border-[#000000] text-center">
-
-                                    <!-- Baris Ke 1 -->
-                                    <tr>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">No.</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Nama</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Judul</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Deskripsi Singkat</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Deskripsi Panjang</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">View</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Date</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Aksi</th>
-                                    </tr>
-
-                                    <!-- Baris Ke 2 -->
-                                    <tr>
-                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">1.</td>
-                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">Rizky Rahman Rambe</td>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">AkuInginPahala</th>
-                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">Keindahan Alam</td>
-                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">Ada Pohon, Daun, Dan Ikan Terbang</td>
-                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">10</td>
-                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">30/10/2003</td>
-                                        <td class="border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold">
+                                    <tr class="grid grid-rows-4">
+                                        <td class="hidden md:block border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">1.</td>
+                                        <td class="md:border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">Rizky Rahman Rambe</td>
+                                        <td class="md:border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">AkuInginPahala</td>
+                                        <td class="hidden md:block border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">Keindahan Alam</td>
+                                        <td class="hidden md:block border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">Ada Pohon, Daun, Dan Ikan Terbang</td>
+                                        <td class="hidden md:block border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">10</td>
+                                        <td class="hidden md:block border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">30/10/2003</td>
+                                        <td class="hidden md:block border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold">
                                             <div class="flex justify-center gap-2">
                                                 <a href="edit(postingan).html">
                                                 <button class="py-1 px-3 bg-green-400 rounded-lg focus:bg-[#A9A9A9]">
