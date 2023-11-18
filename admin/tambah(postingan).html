@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAMBAH(POSTINGAN)</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+
+    <!-- Tailwind Start -->
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    spacing: {
+                        13: "3.25rem",
+                    },
+                    fontFamily: {
+                        inter: ["Inter"],
+                    },
+                },
+            },
+        };
+    </script>
+    <!-- Tailwind End -->
+
+    <style type="text/tailwindcss">
+        @media (max-width: 768px) {
+        .fixeed {
+            position: fixed;
+        }
+        th, .tab {
+            display: none;
+        }
+        tr {
+            display: grid;
+        }
+
+        @keyframes slideInLeft {
+          from {
+            transform: translateX(-100%);
+          }
+          to {
+            transform: translateX(0);
+          }
+        }
+
+        .overflow-y-scrol {
+          overflow-y: scroll;
+        }
+      }
+
+      @keyframes slideInRight {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+</head>
+
+<body class="bg-[#F2F4F7]">
+    <!-- Header Start -->
+    <div class="container max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:max-w-full p-4 lg:p-0 lg:px-5">
+        <!-- Pembungkus Grid Start -->
+        <div class="grid grid-cols-8 gap-3 lg:gap-5 lg:p-8">
+            <!-- Pembungkus Pertama Start -->
+            <div class="col-span-8 bg-[#FFFFFF] p-4 rounded-xl">
+                <div class="flex items-center gap-3 px-2 md:px-8">
+                    <div class="hidden md:block">
+                        <!-- Logo & Text -->
+                        <div class="flex items-center gap-3">
+                            <!-- Logo -->
+                            <div
+                                class="w-10 lg:w-14 h-10 lg:h-14 overflow-hidden border border-[#ffffff90] rounded-full">
+                                <img class="object-cover w-full h-full" src="../images/logo.png" />
+                            </div>
+
+                            <!-- Text -->
+                            <div class="">
+                                <h1 class="font-bold text-base lg:text-xl text-[#000000] uppercase">
+                                    Smk 2 Ratu
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center">
+                        <!-- Hamburger Mobile -->
+                        <button class="block absolute md:hidden" id="hamburger" name="hamburger" type="button">
+                            <div class="border border-[#D9D9D9] rounded-full">
+                                <img class="w-9" src="../images/Hamburger.svg" />
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="grow"></div>
+
+                    <div class="cursor-pointer" id="dekstop" name="dekstop">
+                        <div
+                            class="w-9 lg:w-12 h-9 lg:h-12 overflow-hidden border lg:border-2 border-gray-400 rounded-full">
+                            <img class="object-cover w-full h-full" src="../images/Avatar.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pembungkus Pertama End -->
+
+            <!-- Pembungkus Kedua Start -->
+            <div class="hidden overflow-y-scroll md:block top-0 bottom-0 inset-x-0 w-[17rem] md:w-full fixeed row-span-3 md:col-span-3 lg:col-span-2 bg-[#FFFFFF] p-4 md:rounded-xl z-20"
+                id="nav-menu" style="animation: slideInLeft 1s">
+                <div class="md:hidden flex justify-center relative z-10">
+                    <!-- Pembungkus -->
+                    <div class="fixed bg-[#FFFFFF] top-0 pt-4 px-11 w-auto border-b-[0.1px] border-gray-500">
+                        <div class="pb-2">
+                            <!-- Logo & Text -->
+                            <div class="flex items-center gap-3">
+                                <!-- Logo -->
+                                <div class="w-12 h-12 overflow-hidden border border-[#ffffff90] rounded-full">
+                                    <img class="object-cover w-full h-full" src="../images/logo.png" />
+                                </div>
+
+                                <!-- Text -->
+                                <div class="">
+                                    <h1 class="text-[#000000] text-base font-bold uppercase">
+                                        Smk 2 Ratu
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-[4.5rem] md:mt-0">
+
+                    <!-- Pembungkus Border Start -->
+                    <div class="">
+                        <div class="pt-4 pb-5 border-b-[0.1px] border-[#000000]">
+                            <div class="px-5 grid gap-3">
+                                <!-- Border Start -->
+                                <a href="home.html">
+                                <div class="py-2 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer">
+                                    <div class="flex mx-5 items-center gap-3">
+                                        <img class="w-4 lg:w-5" src="../images/Dashboard.svg" />
+                                        <h1 class="font-semibold text-xs md:text-sm lg:text-base text-[#000000]">
+                                            Dashboard
+                                        </h1>
+                                    </div>
+                                </div>
+                                </a>
+                                <!-- Border End -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-3 pb-2">
+                        <h1 class="font-bold text-sm lg:text-base text-[#000000] ml-5 uppercase">
+                            Articles
+                        </h1>
+                    </div>
+
+                    <!-- Pembungkus -->
+                    <div class="" x-data="{ isOpen : false, selectedOption: '' }" @click.away="isOpen = false">
+
+                        <!-- Icon & Text ( Peserta ) -->
+                        <div class="flex py-2 mx-5 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer" x-model="selectedOption" @click="isOpen = !isOpen">
+                            <div class="flex mx-5 items-center gap-3">
+                                <img class="w-4 lg:w-5" src="../images/Postingan.svg" />
+                                <h1 class="font-semibold text-xs md:text-sm lg:text-base text-[#000000]">
+                                    Postingan
+                                </h1>
+                            </div>    
+                            <div class="grow"></div>
+                            <div class="mr-1">
+                                <img class="w-5" src="../images/Dropdown.svg">
+                            </div>
+                        </div>
+                        
+                        <!-- Pembungkus Sub Menu -->
+                        <div x-show="isOpen" class="pt-3 grid gap-3">
+
+                            <!-- Icon & Text ( Tambah ) -->
+                            <a href="tambah.html">
+                            <div class="flex py-2 mx-5 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer" x-model="selectedOption" @click="isOpen = !isOpen">
+                                <div class="flex mx-5 items-center gap-3">
+                                    <img class="w-4 lg:w-5" src="../images/Tambah.svg" />
+                                    <h1 class="font-semibold text-xs md:text-sm lg:text-base text-[#000000]">
+                                        Tambah
+                                    </h1>
+                                </div>
+                            </div>
+                            </a>
+
+                            <!-- Icon & Text ( Aktif ) -->
+                            <a href="aktif.html">
+                            <div class="flex py-2 mx-5 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer" x-model="selectedOption" @click="isOpen = !isOpen">
+                                <div class="flex mx-5 items-center gap-3">
+                                    <img class="w-4 lg:w-5" src="../images/Aktif.svg" />
+                                    <h1 class="font-semibold text-xs md:text-sm lg:text-base text-[#000000]">
+                                        Aktif
+                                    </h1>
+                                </div>
+                            </div>
+                            </a>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Pembungkus Border Start -->
+                    <div class="">
+                        <div class="pt-4 pb-5 border-b-[0.1px] border-[#000000]">
+                            <div class="px-5 grid gap-3">
+                                <!-- Border Start -->
+                                <a href="kategori.html">
+                                <div class="py-2 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer">
+                                    <div class="flex mx-5 items-center gap-3">
+                                        <img class="w-4 lg:w-5" src="../images/Kategori.svg" />
+                                        <h1 class="font-semibold text-xs md:text-sm lg:text-base text-[#000000]">
+                                            Kategori
+                                        </h1>
+                                    </div>
+                                </div>
+                                </a>
+                                <!-- Border End -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-3 pb-2">
+                        <h1 class="font-bold text-sm lg:text-base text-[#000000] ml-5 uppercase">
+                            Fitur
+                        </h1>
+                    </div>
+
+                    <!-- Pembungkus Border Start -->
+                    <div class="">
+                        <div class="py-4 border-b-[0.1px] border-[#000000]">
+                            <div class="px-5 grid gap-3">
+
+                                <!-- Border Start -->
+                                <div class="mb-1">
+                                    <a href="../index.html">
+                                        <div
+                                            class="py-2 bg-red-400 hover:border-[#000000] border-[0.1px] border-[#98A2B3] rounded-lg cursor-pointer">
+                                            <h1
+                                                class="font-semibold text-xs md:text-sm lg:text-base text-[#FFFFFF] text-center">
+                                                Logout
+                                            </h1>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Border End -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pembungkus Border End -->
+            </div>
+            <!-- Pembungkus Kedua End -->
+
+            <!-- Pembungkus Ketiga Start -->
+            <div class="h-[100vh] row-span-5 col-start-1 md:col-span-5 lg:col-start-3 col-span-8 lg:col-span-6 bg-transparent rounded-xl">
+                <div class="grid gap-5">
+                    <div class="container overflow-hidden w-full bg-[#FFFFFF] p-5 rounded-lg">
+
+                        <!-- Text -->
+                        <h1 class="text-base mb-5 lg:text-xl font-bold text-[#A9A9A9] uppercase">Tambah Postingan</h1>
+
+                        <!-- Alert -->
+                        <div class="mb-5 bg-red-500 inline-flex w-full lg:w-[20rem] items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
+                            <span class="mr-2">
+                                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
+                                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <p class="font-bold text-white">Fail!</p>
+                        </div>
+
+                        <form action="">
+
+                            <!-- Pembungkus Nama -->
+                            <div class="py-1">
+                            <label class="" for="nama">
+                                <div class="relative">
+                                <h1 class="absolute top-[-10px] left-[20px] bg-[#FFFFFF] px-2 text-sm font-medium text-[#A9A9A9] cursor-pointer z-10">Nama</h1>
+                                </div>
+                                <input type="text" id="nama" class="w-full lg:w-[20rem] py-2 px-10 mb-3 border-2 border-[#A9A9A9] rounded-lg text-[#A9A9A9] focus:outline-none shadow-md hover:shadow">
+                            </label>
+                            </div>
+
+                            <!-- Pembungkus Judul -->
+                            <div class="py-1">
+                            <label class="" for="Judul">
+                                <div class="relative">
+                                <h1 class="absolute top-[-10px] left-[20px] bg-[#FFFFFF] px-2 text-sm font-medium text-[#A9A9A9] cursor-pointer z-10">Judul</h1>
+                                </div>
+                                <input type="text" id="Judul" class="w-full lg:w-[20rem] py-2 px-10 mb-3 border-2 border-[#A9A9A9] rounded-lg text-[#A9A9A9] focus:outline-none shadow-md hover:shadow">
+                            </label>
+                            </div>
+
+                            <!-- Pembungkus Deskripsi Singkat -->
+                            <div class="py-1">
+                            <label class="" for="Singkat">
+                                <div class="relative">
+                                <h1 class="absolute top-[-10px] left-[20px] bg-[#FFFFFF] px-2 text-sm font-medium text-[#A9A9A9] cursor-pointer z-10">Deskripsi Singkat</h1>
+                                </div>
+                                <input type="text" id="Singkat" class="w-full lg:w-[20rem] py-2 px-10 mb-3 border-2 border-[#A9A9A9] rounded-lg text-[#A9A9A9] focus:outline-none shadow-md hover:shadow">
+                            </label>
+                            </div>
+
+                            <!-- Pembungkus Deskripsi Panjang -->
+                            <div class="py-1">
+                            <label class="" for="Panjang">
+                                <div class="relative">
+                                <h1 class="absolute top-[-10px] left-[20px] bg-[#FFFFFF] px-2 text-sm font-medium text-[#A9A9A9] cursor-pointer z-10">Deskripsi Panjang</h1>
+                                </div>
+                                <input type="text" id="Panjang" class="w-full lg:w-[20rem] py-2 px-10 mb-3 border-2 border-[#A9A9A9] rounded-lg text-[#A9A9A9] focus:outline-none shadow-md hover:shadow">
+                            </label>
+                            </div>
+
+                            <!-- Pembungkus Date -->
+                            <div class="py-1">
+                            <label class="" for="Date">
+                                <div class="relative">
+                                <h1 class="absolute top-[-10px] left-[20px] bg-[#FFFFFF] px-2 text-sm font-medium text-[#A9A9A9] cursor-pointer z-10">Date</h1>
+                                </div>
+                                <input type="date" id="Date" class="w-full lg:w-[20rem] py-2 px-10 mb-3 border-2 border-[#A9A9A9] rounded-lg text-[#A9A9A9] focus:outline-none shadow-md hover:shadow">
+                            </label>
+                            </div>
+
+                        </form>
+
+                        <!-- Button -->
+                        <button class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-2 px-14 mb-3 text-center border-2 border-[#A9A9A9] rounded-lg group focus:bg-[#A9A9A9] focus:border-[#A9A9A9] hover:border-[#000000] shadow-md hover:shadow focus:opacity-50">
+                            <h1 class="font-bold text-base text-[#000000] group-focus:text-[#FFFFFF] uppercase">Tambah</h1>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Pembungkus Ketiga End -->
+        </div>
+        <!-- Pembungkus Grid End -->
+    </div>
+    <!-- Header End -->
+
+    <!-- Script Start -->
+    <script src="../js/desc.js"></script>
+    <script src="../js/hamburger.js"></script>
+    <script src="../js/select.js"></script>
+    <!-- Script End -->
+</body>
+
+</html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>POSTINGAN</title>
+    <title>TAMBAH(KATEGORI)</title>
     <link rel="stylesheet" href="css/main.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
@@ -279,127 +279,47 @@
                     <div class="container overflow-hidden w-full bg-[#FFFFFF] p-5 rounded-lg">
 
                         <!-- Text -->
-                        <h1 class="text-base mb-5 lg:text-xl font-bold text-[#A9A9A9] uppercase">Data Postingan</h1>
+                        <h1 class="text-base mb-5 lg:text-xl font-bold text-[#A9A9A9] uppercase">Tambah Kategori</h1>
 
-                        <div class="md:flex gap-3 mb-1">
+                        <!-- Alert -->
+                        <div class="mb-5 bg-red-500 inline-flex w-full lg:w-[20rem] items-center rounded-lg bg-danger-100 px-6 py-2 text-base text-danger-700">
+                            <span class="mr-2">
+                                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
+                                <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <p class="font-bold text-white">Fail!</p>
+                        </div>
 
-                            <!-- Button -->
-                            <a href="tambah(postingan).html">
-                            <button class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-2 px-14 mb-3 text-center border-2 border-[#A9A9A9] rounded-lg focus:bg-[#A9A9A9] focus:border-[#A9A9A9] hover:border-[#000000] shadow-md hover:shadow focus:opacity-50">
-                                <img class="w-6" src="../images/Tambah.svg">
-                                <h1 class="font-bold text-base text-[#000000]">TambahData</h1>
-                            </button>
-                            </a>
+                        <form action="">
 
-                            <div class="grow"></div>
-
-                            <div class="flex justify-center items-center gap-3 md:mb-3">
-                                <!-- Pembungkus Cari -->
-                                <div class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-2 pr-3 border-2 border-[#A9A9A9] rounded-xl shadow-md hover:border-[#000000] hover:shadow focus:bg-[#A9A9A9] focus:opacity-50">
-
-                                    <!-- Icon -->
-                                    <label class="flex items-center ml-5 cursor-pointer" for="Search">
-                                        <img class="w-6" src="../images/Search.svg">
-                                    </label>
-
-                                    <!-- Input -->
-                                    <input class="w-full lg:w-[20rem] text-[#000000] text-base font-bold placeholder:text-base placeholder:text-[#000000] focus:outline-none placeholder:font-bold" placeholder="Searching" type="text" id="Search">
+                            <!-- Pembungkus Kategori -->
+                            <div class="py-1">
+                            <label class="" for="Kategori">
+                                <div class="relative">
+                                <h1 class="absolute top-[-10px] left-[20px] bg-[#FFFFFF] px-2 text-sm font-medium text-[#A9A9A9] cursor-pointer z-10">Kategori</h1>
                                 </div>
-
-                                <button class="" id="select" name="select" type="button">
-                                    <div class="md:hidden border-2 p-1 border-[#A9A9A9] hover:border-[#000000] shadow-md hover:shadow rounded-xl cursor-pointer">
-                                        <img class="w-10" src="../images/Setting.svg">
-                                    </div>
-                                </button>
+                                <input type="text" id="Kategori" class="w-full lg:w-[20rem] py-2 px-10 mb-3 border-2 border-[#A9A9A9] rounded-lg text-[#A9A9A9] focus:outline-none shadow-md hover:shadow">
+                            </label>
                             </div>
 
-                            <!-- Pilih Kategori -->
-                            <div class="hidden md:block mt-3 md:mt-0" id="nav-select"  style="animation: fadeIn 1s">
-                                <select class="py-2 px-10 w-full border-2 text-[#000000] font-bold text-base text-center border-[#A9A9A9] hover:border-[#000000] rounded-xl focus:outline-none shadow-md hover:shadow">
-                                    <option class="text-[#FFFFFF] bg-[#A9A9A9] text-start" value="1">Pilih Kategori</option>
-                                    <option class="text-[#FFFFFF] bg-[#A9A9A9] text-start" value="2">Kebaikan</option>
-                                </select>
+                            <!-- Pembungkus Date -->
+                            <div class="py-1">
+                            <label class="" for="Date">
+                                <div class="relative">
+                                <h1 class="absolute top-[-10px] left-[20px] bg-[#FFFFFF] px-2 text-sm font-medium text-[#A9A9A9] cursor-pointer z-10">Date</h1>
+                                </div>
+                                <input type="date" id="Date" class="w-full lg:w-[20rem] py-2 px-10 mb-3 border-2 border-[#A9A9A9] rounded-lg text-[#A9A9A9] focus:outline-none shadow-md hover:shadow">
+                            </label>
                             </div>
-                        </div>
 
-                        <!-- Pembungkus -->
-                        <div class="w-full md:p-5 md:mb-3 bg-[#FFFFFF] md:border-2 border-[#A9A9A9] hover:border-[#000000] rounded-xl shadow-lg hover:shadow">
+                        </form>
 
-                            <!-- Pembungkus -->
-                            <div class="md:overflow-x-scroll overflow-hidden bg-[#FFFFFF]">
-
-                                <!-- Table -->
-                                <table class="w-full border-collapse bg-[#FFFFFF] md:border-[0.5px] border-[#000000] text-center">
-
-                                    <!-- Baris Ke 1 -->
-                                    <tr class="">
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">No.</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Nama</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Judul</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Deskripsi Singkat</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Deskripsi Panjang</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">View</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Date</th>
-                                        <th class="border-b-[0.5px] border-[#000000] bg-[#EFEFEF] px-4 py-4 font-bold text-sm">Aksi</th>
-                                    </tr>
-
-                                    <!-- Baris Ke 2 -->
-                                    <tr class="text-start md:text-center w-full p-3 mt-3 border-2 border-[#A9A9A9] hover:border-[#000000] md:border-none rounded-xl shadow-md hover:shadow">  
-                                        <td class="tab md:border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">1.</td>
-                                        <td class="md:border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 md:py-4 font-bold md:font-semibold text-sm">Rizky Rahman Rambe</td>
-                                        <td class="md:border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 md:py-4 font-semibold text-sm">AkuInginPahala</td>
-                                        <td class="md:border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm">Keindahan Alam</td>
-                                        <td class="md:border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm">Ada Pohon, Daun, Dan Ikan Terbang</td>
-                                        <td class="md:border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm">10</td>
-                                        <td class="md:border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm">30/10/2003</td>
-                                        <td class="md:border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold">
-                                            <div class="flex md:justify-center gap-2">
-                                                <a href="edit(postingan).html">
-                                                <button class="py-1 px-3 border-2 border-[#A9A9A9] rounded-lg group focus:bg-[#A9A9A9] focus:border-[#A9A9A9] hover:border-[#000000]">
-                                                    <h1 class="text-sm text-[#000000] group-focus:text-[#FFFFFF]">Edit</h1>
-                                                </button>
-                                                </a>
-
-                                                <a href="#">
-                                                <button class="py-1 px-3 border-2 border-[#A9A9A9] rounded-lg group focus:bg-[#A9A9A9] focus:border-[#A9A9A9] hover:border-[#000000]">
-                                                    <h1 class="text-sm text-[#000000] group-focus:text-[#FFFFFF]">Delete</h1>
-                                                </button>
-                                                </a>
-                                            </div>
-                                        </td>  
-                                    </tr>
-                                    
-                                    <!-- Baris Ke 2 -->
-                                    <tr class="text-start md:text-center w-full p-3 mt-3 border-2 border-[#A9A9A9] hover:border-[#000000] md:border-none rounded-xl shadow-md hover:shadow">  
-                                        <td class="tab md:border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold text-sm">1.</td>
-                                        <td class="md:border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 md:py-4 font-bold md:font-semibold text-sm">Rizky Rahman Rambe</td>
-                                        <td class="md:border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 md:py-4 font-semibold text-sm">AkuInginPahala</td>
-                                        <td class="md:border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm">Keindahan Alam</td>
-                                        <td class="md:border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm">Ada Pohon, Daun, Dan Ikan Terbang</td>
-                                        <td class="md:border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm">10</td>
-                                        <td class="md:border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 md:py-4 font-normal md:font-semibold text-sm">30/10/2003</td>
-                                        <td class="md:border-b-[0.5px] border-[#000000] bg-[#FFFFFF] px-4 py-4 font-semibold">
-                                            <div class="flex md:justify-center gap-2">
-                                                <a href="edit(postingan).html">
-                                                <button class="py-1 px-3 border-2 border-[#A9A9A9] rounded-lg group focus:bg-[#A9A9A9] focus:border-[#A9A9A9] hover:border-[#000000]">
-                                                    <h1 class="text-sm text-[#000000] group-focus:text-[#FFFFFF]">Edit</h1>
-                                                </button>
-                                                </a>
-
-                                                <a href="#">
-                                                <button class="py-1 px-3 border-2 border-[#A9A9A9] rounded-lg group focus:bg-[#A9A9A9] focus:border-[#A9A9A9] hover:border-[#000000]">
-                                                    <h1 class="text-sm text-[#000000] group-focus:text-[#FFFFFF]">Delete</h1>
-                                                </button>
-                                                </a>
-                                            </div>
-                                        </td>  
-                                    </tr>
-
-                                </table>
-                            </div>
-                        </div>
+                        <!-- Button -->
+                        <button class="flex justify-center items-center gap-3 w-full lg:w-[20rem] py-2 px-14 mb-3 text-center border-2 border-[#A9A9A9] rounded-lg group focus:bg-[#A9A9A9] focus:border-[#A9A9A9] hover:border-[#000000] shadow-md hover:shadow focus:opacity-50">
+                            <h1 class="font-bold text-base text-[#000000] group-focus:text-[#FFFFFF] uppercase">Tambah</h1>
+                        </button>
                     </div>
-
                 </div>
             </div>
             <!-- Pembungkus Ketiga End -->
